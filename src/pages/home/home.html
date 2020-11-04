@@ -8,11 +8,17 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
+  <h3>Rasor Pay Integration</h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+<ion-card>
+<ion-row>
+ <ion-col>
+          Total Payment
+        </ion-col>
+        <ion-col>
+          {{currencyIcon}}{{paymentAmount/100}}
+        </ion-col>
+      </ion-row>
+  <button  ion-item color="primary" (click)="payWithRazor()">Pay</button>
+  </ion-card>
 </ion-content>
